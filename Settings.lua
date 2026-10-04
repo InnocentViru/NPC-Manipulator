@@ -410,7 +410,7 @@ end)
 
 local fuck = Instance.new("TextBox", frames[7])
 fuck.Text = ""
-fuck.PlaceholderText = "Set Dance Speed..."
+fuck.PlaceholderText = "Set Uh, Speed..."
 fuck.AnchorPoint = Vector2.new(.5, .5)
 fuck.TextScaled = true
 fuck.PlaceholderColor3 = Color3.new(1,1,1)
