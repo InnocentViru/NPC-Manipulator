@@ -29,6 +29,16 @@ hrp = char.HumanoidRootPart
 hum = char.Humanoid
 cam = workspace.CurrentCamera
 
+function reasign(c)
+    hrp = c:WaitForChild("HumanoidRootPart")
+    hum = c:WaitForChild("Humanoid")
+    char = c
+end
+if getgenv().charspawn then getgenv().charspawn:Disconnect() end
+getgenv().charspawn = plr.CharacterAdded:Connect(function(c)
+    reasign(c)
+end)
+
 file = "NM_Settings.json"
 
 ts = game.TweenService
